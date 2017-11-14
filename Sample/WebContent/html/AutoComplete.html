@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>オートコンプリートサンプル</title>
+<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../js/AutoComplete.js"></script>
+</head>
+<body>
+  <p>inputタグにautocomplete属性を付けた場合</p>
+  <input type="text" autocomplete="on" list="dataList">
+  <datalist id="dataList">
+    <option value="おはよう" />
+    <option value="こんにちは" />
+    <option value="こんばんは" />
+    <option value="さようなら" />
+  </datalist>
+
+  <p>jQuery UIを使った場合</p>
+  <input type="text" id="keyword" >
+</body>
+</html>
