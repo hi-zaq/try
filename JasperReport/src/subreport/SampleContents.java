@@ -16,6 +16,14 @@ public class SampleContents {
     this.afValue = afValue;
   }
 
+  public SampleContents() {
+    this.name = null;
+    this.requestMessage = null;
+    this.responseMessage = null;
+    this.bfValue = null;
+    this.afValue = null;
+  }
+
   public String getName() {
     return name;
   }

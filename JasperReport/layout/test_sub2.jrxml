@@ -38,7 +38,7 @@
 		<band height="21" splitType="Prevent">
 			<staticText>
 				<reportElement key="" style="Style_ItemName" x="0" y="0" width="555" height="21" uuid="07f0fb29-11d4-4039-85d6-d360bc91cc19"/>
-				<text><![CDATA[【果物】]]></text>
+				<text><![CDATA[【野菜】]]></text>
 			</staticText>
 		</band>
 	</title>
