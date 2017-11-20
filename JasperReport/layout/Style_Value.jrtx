@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio -->
+<jasperTemplate xmlns="http://jasperreports.sourceforge.net/jasperreports/template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/template http://jasperreports.sourceforge.net/xsd/jaspertemplate.xsd">
+	<style name="Style_Value" hTextAlign="Left" vTextAlign="Middle" fontName="ＭＳ 明朝" fontSize="10" pdfFontName="HeiseiMin-W3" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="1.0"/>
+		</box>
+		<paragraph lineSpacing="Fixed" lineSpacingSize="12.0"/>
+	</style>
+</jasperTemplate>

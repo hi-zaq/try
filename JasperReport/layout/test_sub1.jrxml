@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test_sub1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6b70fdcd-282e-4e77-9dbe-30d13403e9ad">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<template><![CDATA["layout/Style_ItemName.jrtx"]]></template>
+	<template><![CDATA["layout/Style_Value.jrtx"]]></template>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="requestMessage" class="java.lang.String">
+		<fieldDescription><![CDATA[requestMessage]]></fieldDescription>
+	</field>
+	<field name="bfValue" class="java.lang.String">
+		<fieldDescription><![CDATA[bfValue]]></fieldDescription>
+	</field>
+	<field name="afValue" class="java.lang.String">
+		<fieldDescription><![CDATA[afValue]]></fieldDescription>
+	</field>
+	<field name="responseMessage" class="java.lang.String">
+		<fieldDescription><![CDATA[responseMessage]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement key="" style="Style_ItemName" x="0" y="0" width="555" height="21" uuid="07f0fb29-11d4-4039-85d6-d360bc91cc19"/>
+				<text><![CDATA[【野菜】]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="90" splitType="Stretch">
+			<frame>
+				<reportElement stretchType="RelativeToTallestObject" x="155" y="0" width="400" height="90" uuid="79e6f9ae-98ec-44ad-ba06-ed934236f339">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="2.0" lineStyle="Solid"/>
+				</box>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Style_Value" x="0" y="0" width="400" height="30" isRemoveLineWhenBlank="true" uuid="f909638d-7b05-4837-bcc5-2dfa132dba94"/>
+					<textFieldExpression><![CDATA[$F{requestMessage}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement style="Style_Value" positionType="Float" x="0" y="30" width="400" height="30" isRemoveLineWhenBlank="true" uuid="52ba9e91-5584-4f11-b78e-749649191dd0"/>
+					<textFieldExpression><![CDATA[$F{responseMessage}]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement positionType="Float" x="0" y="60" width="400" height="30" uuid="36b0b9b8-3870-4cfe-8aa5-02da3339b165">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<textField isStretchWithOverflow="true">
+						<reportElement style="Style_Value" positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="195" height="30" uuid="8e0252a3-8028-49d6-9844-955231d4a970"/>
+						<textFieldExpression><![CDATA[$F{bfValue}]]></textFieldExpression>
+					</textField>
+					<textField isStretchWithOverflow="true">
+						<reportElement style="Style_Value" positionType="Float" stretchType="RelativeToTallestObject" x="195" y="0" width="205" height="30" uuid="e28066c8-4aa2-430b-a3cb-4e977803bec3"/>
+						<textFieldExpression><![CDATA[$F{afValue}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<textField isStretchWithOverflow="true">
+					<reportElement key="" style="Style_Value" stretchType="ContainerHeight" x="-81" y="0" width="80" height="90" uuid="0584a41e-4914-4939-8ab0-da66032a3c0e"/>
+					<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+				</textField>
+			</frame>
+			<textField>
+				<reportElement style="Style_Value" stretchType="RelativeToTallestObject" x="0" y="0" width="74" height="90" uuid="26883f6d-09c3-42d2-abc5-0fc193ac5af9"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement key="" style="Style_ItemName" x="360" y="0" width="180" height="30" uuid="49cb11b5-3081-4de0-989d-d25398799caf"/>
+				<text><![CDATA[$V{REPORT_COUNT}]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" style="Style_ItemName" x="0" y="0" width="180" height="30" uuid="a03d8072-d46f-4cd2-8780-7cd2672f5c2f"/>
+				<text><![CDATA[$V{COLUMN_NUMBER}]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" style="Style_ItemName" x="180" y="0" width="180" height="30" uuid="d4240c43-507b-4527-ae14-08142bb8732c"/>
+				<text><![CDATA[$V{COLUMN_COUNT}]]></text>
+			</staticText>
+			<textField>
+				<reportElement key="" style="Style_Value" x="180" y="30" width="180" height="30" uuid="ec7e85a8-dbc8-4b09-96c3-052f4e9ff9d6"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" style="Style_Value" x="360" y="30" width="180" height="30" uuid="4ae3f2c6-f2ee-4934-8247-41d2bcc0da1a"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" style="Style_Value" x="0" y="30" width="180" height="30" uuid="169ca1c7-9390-4b68-85fb-ab1b23b5ed6b"/>
+				<textFieldExpression><![CDATA[$V{COLUMN_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+</jasperReport>
